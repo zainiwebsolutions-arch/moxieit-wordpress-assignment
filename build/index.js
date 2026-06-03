@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=window.wp.blocks,i=window.ReactJSXRuntime;(0,e.registerBlockType)("moxieit/practice-areas",{edit:()=>(0,i.jsxs)("div",{children:[(0,i.jsx)("h3",{children:"Practice Areas Block"}),(0,i.jsx)("p",{children:"This block displays the latest Practice Areas."})]}),save:()=>null})})();

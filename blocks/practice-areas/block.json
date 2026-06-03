@@ -1,0 +1,9 @@
+{
+    "apiVersion": 3,
+    "name": "moxieit/practice-areas",
+    "title": "Practice Areas",
+    "category": "widgets",
+    "icon": "screenoptions",
+    "description": "Displays latest Practice Areas.",
+    "editorScript": "moxieit-practice-areas-editor"
+}
