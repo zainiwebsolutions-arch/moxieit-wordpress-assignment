@@ -1,0 +1,8 @@
+{
+    "apiVersion": 3,
+    "name": "moxieit/consultation-form",
+    "title": "Consultation Form",
+    "category": "widgets",
+    "icon": "feedback",
+    "description": "Displays consultation form."
+}

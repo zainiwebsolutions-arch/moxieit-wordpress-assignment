@@ -1,0 +1,8 @@
+{
+    "apiVersion": 3,
+    "name": "moxieit/hero-slider",
+    "title": "Hero Slider",
+    "category": "widgets",
+    "icon": "slides",
+    "description": "Hero slider section."
+}

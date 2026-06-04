@@ -1,0 +1,8 @@
+{
+    "apiVersion": 3,
+    "name": "moxieit/blog-grid",
+    "title": "Blog Grid",
+    "category": "widgets",
+    "icon": "admin-post",
+    "description": "Displays latest blog posts."
+}

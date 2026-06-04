@@ -231,7 +231,7 @@ function moxieit_register_practice_area_cpt()
 
 add_action('init', 'moxieit_register_practice_area_cpt');
 
-function moxieit_register_blocks()
+function moxieit_register_practice_areas_block()
 {
     register_block_type(
         get_template_directory() . '/blocks/practice-areas',
@@ -241,7 +241,7 @@ function moxieit_register_blocks()
     );
 }
 
-add_action('init', 'moxieit_register_blocks');
+add_action('init', 'moxieit_register_practice_areas_block');
 
 function moxieit_render_practice_areas_block()
 {
@@ -263,3 +263,87 @@ function moxieit_register_block_assets()
     );
 }
 add_action('init', 'moxieit_register_block_assets');
+
+function moxieit_register_blog_grid_block()
+{
+    register_block_type(
+        get_template_directory() . '/blocks/blog-grid',
+        array(
+            'render_callback' => 'moxieit_render_blog_grid_block'
+        )
+    );
+}
+
+add_action('init', 'moxieit_register_blog_grid_block');
+
+function moxieit_render_blog_grid_block()
+{
+    ob_start();
+
+    include get_template_directory() . '/blocks/blog-grid/render.php';
+
+    return ob_get_clean();
+}
+
+function moxieit_register_consultation_form_block()
+{
+    register_block_type(
+        get_template_directory() . '/blocks/consultation-form',
+        array(
+            'render_callback' => 'moxieit_render_consultation_form_block'
+        )
+    );
+}
+
+add_action('init', 'moxieit_register_consultation_form_block');
+
+function moxieit_render_consultation_form_block()
+{
+    ob_start();
+
+    include get_template_directory() . '/blocks/consultation-form/render.php';
+
+    return ob_get_clean();
+}
+
+function moxieit_register_hero_slider_block()
+{
+    register_block_type(
+        get_template_directory() . '/blocks/hero-slider',
+        array(
+            'render_callback' => 'moxieit_render_hero_slider_block'
+        )
+    );
+}
+
+add_action('init', 'moxieit_register_hero_slider_block');
+
+function moxieit_render_hero_slider_block()
+{
+    ob_start();
+
+    include get_template_directory() . '/blocks/hero-slider/render.php';
+
+    return ob_get_clean();
+}
+
+function moxieit_register_about_us_block()
+{
+    register_block_type(
+        get_template_directory() . '/blocks/about-us',
+        array(
+            'render_callback' => 'moxieit_render_about_us_block'
+        )
+    );
+}
+
+add_action('init', 'moxieit_register_about_us_block');
+
+function moxieit_render_about_us_block()
+{
+    ob_start();
+
+    include get_template_directory() . '/blocks/about-us/render.php';
+
+    return ob_get_clean();
+}
